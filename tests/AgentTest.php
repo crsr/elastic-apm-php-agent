@@ -1,23 +1,22 @@
 <?php
-namespace PhilKra\Tests;
+namespace HT\Tests;
 
-use \PhilKra\Agent;
-use PhilKra\Stores\ErrorsStore;
-use PhilKra\Stores\TransactionsStore;
-use \PhilKra\Transaction\Summary;
-use PHPUnit\Framework\MockObject\MockObject;
+use HT\Agent;
+use HT\Stores\ErrorsStore;
+use HT\Stores\TransactionsStore;
+use HT\Transaction\Summary;
 use Yaoi\Mock;
 
 /**
- * Test Case for @see \PhilKra\Agent
+ * Test Case for @see \HT\Agent
  */
 final class AgentTest extends TestCase {
 
   /**
-   * @covers \PhilKra\Agent::__construct
-   * @covers \PhilKra\Agent::startTransaction
-   * @covers \PhilKra\Agent::stopTransaction
-   * @covers \PhilKra\Agent::getTransaction
+   * @covers \HT\Agent::__construct
+   * @covers \HT\Agent::startTransaction
+   * @covers \HT\Agent::stopTransaction
+   * @covers \HT\Agent::getTransaction
    */
   public function testStartAndStopATransaction() {
     $agent = new Agent(array('appName' => 'phpunit_1'));
@@ -40,10 +39,10 @@ final class AgentTest extends TestCase {
   }
 
   /**
-   * @covers \PhilKra\Agent::__construct
-   * @covers \PhilKra\Agent::startTransaction
-   * @covers \PhilKra\Agent::stopTransaction
-   * @covers \PhilKra\Agent::getTransaction
+   * @covers \HT\Agent::__construct
+   * @covers \HT\Agent::startTransaction
+   * @covers \HT\Agent::stopTransaction
+   * @covers \HT\Agent::getTransaction
    */
   public function testStartAndStopATransactionWithExplicitStart() {
     $agent = new Agent(array('appName' => 'phpunit_1'));

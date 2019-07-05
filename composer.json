@@ -1,6 +1,6 @@
 {
-    "name" : "philkra/elastic-apm-php-agent",
-    "description": "A php agent for Elastic APM",
+    "name" : "hakantaskin/elastic-apm-php-agent",
+    "description": "A php agent for Elastic APM for php 5.3 v",
     "license": "MIT",
     "require" : {
         "php" : ">= 5.3",
@@ -17,12 +17,12 @@
     },
     "autoload" : {
         "psr-4" : {
-            "PhilKra\\": "src/"
+            "HT\\": "src/"
         }
     },
     "autoload-dev": {
     "psr-4": {
-        "PhilKra\\Tests\\": "tests/"
+        "HT\\Tests\\": "tests/"
     }
   },
     "config" : {
@@ -30,13 +30,9 @@
     },
     "authors" : [
         {
-            "name" : "Philip Krauss",
-            "email" : "philip@philipkrauss.at",
-            "homepage" : "https://github.com/philkra/elastic-apm-agent-php"
-        },
-        {
-            "name" : "George Boot",
-            "email": "george@entryninja.com"
+            "name" : "Hakan Taskin",
+            "email" : "mr.hakantaskin@gmail.com",
+            "homepage" : "https://github.com/hakantaskin/elastic-apm-agent-php"
         }
     ]
 }

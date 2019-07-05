@@ -1,18 +1,18 @@
 <?php
-namespace PhilKra\Tests\Stores;
+namespace HT\Tests\Stores;
 
-use \PhilKra\Stores\TransactionsStore;
-use \PhilKra\Events\Transaction;
-use PhilKra\Tests\TestCase;
+use HT\Stores\TransactionsStore;
+use HT\Events\Transaction;
+use HT\Tests\TestCase;
 
 /**
- * Test Case for @see \PhilKra\Stores\TransactionsStore
+ * Test Case for @see \HT\Stores\TransactionsStore
  */
 final class TransactionsStoreTest extends TestCase {
 
   /**
-   * @covers \PhilKra\Stores\TransactionsStore::register
-   * @covers \PhilKra\Stores\TransactionsStore::get
+   * @covers \HT\Stores\TransactionsStore::register
+   * @covers \HT\Stores\TransactionsStore::get
    */
   public function testTransactionRegistrationAndFetch() {
     $store = new TransactionsStore();
@@ -37,7 +37,7 @@ final class TransactionsStoreTest extends TestCase {
   /**
    * @depends testTransactionRegistrationAndFetch
    *
-   * @covers \PhilKra\Stores\TransactionsStore::get
+   * @covers \HT\Stores\TransactionsStore::get
    */
   public function testFetchUnknownTransaction() {
     $store = new TransactionsStore();

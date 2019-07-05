@@ -1,9 +1,9 @@
 <?php
 
-namespace PhilKra\Events;
+namespace HT\Events;
 
-use PhilKra\Helper\Timer;
-use PhilKra\Serializers\JsonSerializable;
+use HT\Helper\Timer;
+use HT\Serializers\JsonSerializable;
 
 /**
  *
@@ -24,7 +24,7 @@ class Transaction extends EventBean implements JsonSerializable
     /**
      * Transaction Timer
      *
-     * @var \PhilKra\Helper\Timer
+     * @var \HT\Helper\Timer
      */
     private $timer;
 

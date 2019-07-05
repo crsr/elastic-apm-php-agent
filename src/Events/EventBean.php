@@ -1,6 +1,6 @@
 <?php
 
-namespace PhilKra\Events;
+namespace HT\Events;
 
 
 use Rhumsaa\Uuid\Uuid;

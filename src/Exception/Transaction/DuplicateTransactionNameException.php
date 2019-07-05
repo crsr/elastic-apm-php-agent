@@ -1,6 +1,6 @@
 <?php
 
-namespace PhilKra\Exception\Transaction;
+namespace HT\Exception\Transaction;
 
 /**
  * Trying to register a already registered Transaction

@@ -1,10 +1,10 @@
 <?php
 
-namespace PhilKra\Helper;
+namespace HT\Helper;
 
-use PhilKra\Exception\Timer\AlreadyRunningException;
-use PhilKra\Exception\Timer\NotStartedException;
-use PhilKra\Exception\Timer\NotStoppedException;
+use HT\Exception\Timer\AlreadyRunningException;
+use HT\Exception\Timer\NotStartedException;
+use HT\Exception\Timer\NotStoppedException;
 
 /**
  * Timer for Duration tracing
@@ -48,7 +48,7 @@ class Timer
     /**
      * Stop the Timer
      *
-     * @throws \PhilKra\Exception\Timer\NotStartedException
+     * @throws \HT\Exception\Timer\NotStartedException
      *
      * @return void
      */
@@ -64,7 +64,7 @@ class Timer
     /**
      * Get the elapsed Duration of this Timer in MicroSeconds
      *
-     * @throws \PhilKra\Exception\Timer\NotStoppedException
+     * @throws \HT\Exception\Timer\NotStoppedException
      *
      * @return float
      */
@@ -80,7 +80,7 @@ class Timer
     /**
      * Get the elapsed Duration of this Timer in MilliSeconds
      *
-     * @throws \PhilKra\Exception\Timer\NotStoppedException
+     * @throws \HT\Exception\Timer\NotStoppedException
      *
      * @return float
      */
@@ -96,7 +96,7 @@ class Timer
     /**
      * Get the current elapsed Interval of the Timer in MicroSeconds
      *
-     * @throws \PhilKra\Exception\Timer\NotStartedException
+     * @throws \HT\Exception\Timer\NotStartedException
      *
      * @return float
      */
@@ -114,7 +114,7 @@ class Timer
     /**
      * Get the current elapsed Interval of the Timer in MilliSeconds
      *
-     * @throws \PhilKra\Exception\Timer\NotStartedException
+     * @throws \HT\Exception\Timer\NotStartedException
      *
      * @return float
      */

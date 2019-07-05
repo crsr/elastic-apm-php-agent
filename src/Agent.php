@@ -1,16 +1,16 @@
 <?php
 
-namespace PhilKra;
+namespace HT;
 
-use PhilKra\Events\DefaultEventFactory;
-use PhilKra\Events\EventFactoryInterface;
-use PhilKra\Stores\ErrorsStore;
-use PhilKra\Stores\TransactionsStore;
-use PhilKra\Events\Transaction;
-use PhilKra\Helper\Timer;
-use PhilKra\Helper\Config;
-use PhilKra\Middleware\Connector;
-use PhilKra\Exception\Transaction\UnknownTransactionException;
+use HT\Events\DefaultEventFactory;
+use HT\Events\EventFactoryInterface;
+use HT\Stores\ErrorsStore;
+use HT\Stores\TransactionsStore;
+use HT\Events\Transaction;
+use HT\Helper\Timer;
+use HT\Helper\Config;
+use HT\Middleware\Connector;
+use HT\Exception\Transaction\UnknownTransactionException;
 
 /**
  *
@@ -38,28 +38,28 @@ class Agent
     /**
      * Config Store
      *
-     * @var \PhilKra\Helper\Config
+     * @var \HT\Helper\Config
      */
     private $config;
 
     /**
      * Transactions Store
      *
-     * @var \PhilKra\Stores\TransactionsStore
+     * @var \HT\Stores\TransactionsStore
      */
     private $transactionsStore;
 
     /**
      * Error Events Store
      *
-     * @var \PhilKra\Stores\ErrorsStore
+     * @var \HT\Stores\ErrorsStore
      */
     private $errorsStore;
 
     /**
      * Apm Timer
      *
-     * @var \PhilKra\Helper\Timer
+     * @var \HT\Helper\Timer
      */
     private $timer;
 
@@ -120,7 +120,7 @@ class Agent
     /**
      * Start the Transaction capturing
      *
-     * @throws \PhilKra\Exception\Transaction\DuplicateTransactionNameException
+     * @throws \HT\Exception\Transaction\DuplicateTransactionNameException
      *
      * @param string $name
      * @param array  $context
@@ -147,7 +147,7 @@ class Agent
     /**
      * Stop the Transaction
      *
-     * @throws \PhilKra\Exception\Transaction\UnknownTransactionException
+     * @throws \HT\Exception\Transaction\UnknownTransactionException
      *
      * @param string $name
      * @param array $meta, Def: []
@@ -164,7 +164,7 @@ class Agent
     /**
      * Get a Transaction
      *
-     * @throws \PhilKra\Exception\Transaction\UnknownTransactionException
+     * @throws \HT\Exception\Transaction\UnknownTransactionException
      *
      * @param string $name
      *
@@ -200,7 +200,7 @@ class Agent
     /**
      * Get the Agent Config
      *
-     * @return \PhilKra\Helper\Config
+     * @return \HT\Helper\Config
      */
     public function getConfig()
     {

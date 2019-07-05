@@ -1,20 +1,20 @@
 <?php
-namespace PhilKra\Tests\Helper;
+namespace HT\Tests\Helper;
 
-use PhilKra\Exception\Timer\AlreadyRunningException;
-use \PhilKra\Helper\Timer;
-use PhilKra\Tests\TestCase;
+use HT\Exception\Timer\AlreadyRunningException;
+use HT\Helper\Timer;
+use HT\Tests\TestCase;
 
 /**
- * Test Case for @see \PhilKra\Helper\Timer
+ * Test Case for @see \HT\Helper\Timer
  */
 final class TimerTest extends TestCase {
 
   /**
-   * @covers \PhilKra\Helper\Timer::start
-   * @covers \PhilKra\Helper\Timer::stop
-   * @covers \PhilKra\Helper\Timer::getDuration
-   * @covers \PhilKra\Helper\Timer::toMicro
+   * @covers \HT\Helper\Timer::start
+   * @covers \HT\Helper\Timer::stop
+   * @covers \HT\Helper\Timer::getDuration
+   * @covers \HT\Helper\Timer::toMicro
    */
   public function testCanBeStartedAndStoppedWithDuration() {
     $timer = new Timer();
@@ -28,10 +28,10 @@ final class TimerTest extends TestCase {
   }
 
     /**
-     * @covers \PhilKra\Helper\Timer::start
-     * @covers \PhilKra\Helper\Timer::stop
-     * @covers \PhilKra\Helper\Timer::getDuration
-     * @covers \PhilKra\Helper\Timer::toMicro
+     * @covers \HT\Helper\Timer::start
+     * @covers \HT\Helper\Timer::stop
+     * @covers \HT\Helper\Timer::getDuration
+     * @covers \HT\Helper\Timer::toMicro
      */
     public function testCanCalculateDurationInMilliseconds() {
         $timer = new Timer();
@@ -47,11 +47,11 @@ final class TimerTest extends TestCase {
   /**
    * @depends testCanBeStartedAndStoppedWithDuration
    *
-   * @covers \PhilKra\Helper\Timer::start
-   * @covers \PhilKra\Helper\Timer::stop
-   * @covers \PhilKra\Helper\Timer::getDuration
-   * @covers \PhilKra\Helper\Timer::getElapsed
-   * @covers \PhilKra\Helper\Timer::toMicro
+   * @covers \HT\Helper\Timer::start
+   * @covers \HT\Helper\Timer::stop
+   * @covers \HT\Helper\Timer::getDuration
+   * @covers \HT\Helper\Timer::getElapsed
+   * @covers \HT\Helper\Timer::toMicro
    */
   public function testGetElapsedDurationWithoutError() {
     $timer = new Timer();
@@ -66,8 +66,8 @@ final class TimerTest extends TestCase {
   }
 
     /**
-     * @covers \PhilKra\Helper\Timer::start
-     * @covers \PhilKra\Helper\Timer::getDurationInMilliseconds
+     * @covers \HT\Helper\Timer::start
+     * @covers \HT\Helper\Timer::getDurationInMilliseconds
      */
     public function testCanBeStartedWithExplicitStartTime() {
         $timer = new Timer(microtime(true) - .5); // Start timer 500 milliseconds ago

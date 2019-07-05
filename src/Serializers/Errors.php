@@ -1,9 +1,9 @@
 <?php
 
-namespace PhilKra\Serializers;
+namespace HT\Serializers;
 
-use PhilKra\Stores\ErrorsStore;
-use PhilKra\Helper\Config;
+use HT\Stores\ErrorsStore;
+use HT\Helper\Config;
 
 /**
  *
@@ -15,7 +15,7 @@ use PhilKra\Helper\Config;
 class Errors extends Entity implements JsonSerializable
 {
     /**
-     * @var \PhilKra\Stores\ErrorsStore
+     * @var \HT\Stores\ErrorsStore
      */
     private $store;
 

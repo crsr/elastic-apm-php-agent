@@ -6,7 +6,7 @@
  * Time: 10:49
  */
 
-namespace PhilKra\Tests;
+namespace HT\Tests;
 
 
 abstract class TestCase extends \PHPUnit\Framework\TestCase

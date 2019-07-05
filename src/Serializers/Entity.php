@@ -1,9 +1,9 @@
 <?php
 
-namespace PhilKra\Serializers;
+namespace HT\Serializers;
 
-use PhilKra\Agent;
-use PhilKra\Helper\Config;
+use HT\Agent;
+use HT\Helper\Config;
 
 /**
  *
@@ -13,7 +13,7 @@ use PhilKra\Helper\Config;
 class Entity
 {
     /**
-     * @var \PhilKra\Helper\Config
+     * @var \HT\Helper\Config
      */
     protected $config;
 

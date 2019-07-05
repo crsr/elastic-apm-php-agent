@@ -1,18 +1,18 @@
 <?php
-namespace PhilKra\Tests\Stores;
+namespace HT\Tests\Stores;
 
-use \PhilKra\Stores\ErrorsStore;
-use \PhilKra\Events\Error;
-use PhilKra\Tests\TestCase;
+use HT\Stores\ErrorsStore;
+use HT\Events\Error;
+use HT\Tests\TestCase;
 
 /**
- * Test Case for @see \PhilKra\Stores\ErrorsStore
+ * Test Case for @see \HT\Stores\ErrorsStore
  */
 final class ErrorsStoreTest extends TestCase {
 
   /**
-   * @covers \PhilKra\Stores\ErrorsStoreTest::register
-   * @covers \PhilKra\Stores\ErrorsStoreTest::list
+   * @covers \HT\Stores\ErrorsStoreTest::register
+   * @covers \HT\Stores\ErrorsStoreTest::list
    */
   public function testCaptureErrorExceptionAndListIt() {
     $store = new ErrorsStore();

@@ -1,9 +1,9 @@
 <?php
 
-namespace PhilKra\Serializers;
+namespace HT\Serializers;
 
-use PhilKra\Stores\TransactionsStore;
-use PhilKra\Helper\Config;
+use HT\Stores\TransactionsStore;
+use HT\Helper\Config;
 
 /**
  *
@@ -15,7 +15,7 @@ use PhilKra\Helper\Config;
 class Transactions extends Entity implements JsonSerializable
 {
     /**
-     * @var \PhilKra\Stores\TransactionsStore
+     * @var \HT\Stores\TransactionsStore
      */
     private $store;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace PhilKra\Events;
+namespace HT\Events;
 
-use PhilKra\Serializers\JsonSerializable;
+use HT\Serializers\JsonSerializable;
 
 /**
  *

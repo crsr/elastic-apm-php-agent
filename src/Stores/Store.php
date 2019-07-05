@@ -1,8 +1,8 @@
 <?php
 
-namespace PhilKra\Stores;
+namespace HT\Stores;
 
-use PhilKra\Serializers\JsonSerializable;
+use HT\Serializers\JsonSerializable;
 
 /**
  *
@@ -14,14 +14,14 @@ class Store implements JsonSerializable
     /**
      * Set of Events
      *
-     * @var array of \PhilKra\Events\EventBean
+     * @var array of \HT\Events\EventBean
      */
     protected $store = array();
 
     /**
      * Get all Registered Errors
      *
-     * @return array of \PhilKra\Events\EventBean
+     * @return array of \HT\Events\EventBean
      */
     public function listing()
     {

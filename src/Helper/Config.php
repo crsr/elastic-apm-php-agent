@@ -1,8 +1,8 @@
 <?php
 
-namespace PhilKra\Helper;
+namespace HT\Helper;
 
-use PhilKra\Exception\MissingAppNameException;
+use HT\Exception\MissingAppNameException;
 
 /**
  *

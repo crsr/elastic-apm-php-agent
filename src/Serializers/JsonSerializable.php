@@ -1,6 +1,6 @@
 <?php
 
-namespace PhilKra\Serializers;
+namespace HT\Serializers;
 
 interface JsonSerializable  {
 

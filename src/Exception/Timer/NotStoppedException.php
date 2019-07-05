@@ -1,6 +1,6 @@
 <?php
 
-namespace PhilKra\Exception\Timer;
+namespace HT\Exception\Timer;
 
 /**
  * Trying to get the Duration of a running Timer

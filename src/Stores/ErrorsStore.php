@@ -1,8 +1,8 @@
 <?php
 
-namespace PhilKra\Stores;
+namespace HT\Stores;
 
-use PhilKra\Events\Error;
+use HT\Events\Error;
 
 /**
  *
@@ -14,7 +14,7 @@ class ErrorsStore extends Store
     /**
      * Register an Error Event
      *
-     * @param \PhilKra\Events\Error $error
+     * @param \HT\Events\Error $error
      *
      * @return void
      */

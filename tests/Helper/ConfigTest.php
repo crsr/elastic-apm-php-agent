@@ -1,19 +1,19 @@
 <?php
-namespace PhilKra\Tests\Helper;
+namespace HT\Tests\Helper;
 
-use \PhilKra\Agent;
-use PhilKra\Tests\TestCase;
+use HT\Agent;
+use HT\Tests\TestCase;
 
 /**
- * Test Case for @see \PhilKra\Helper\Config
+ * Test Case for @see \HT\Helper\Config
  */
 final class ConfigTest extends TestCase {
 
   /**
-   * @covers \PhilKra\Helper\Config::__construct
-   * @covers \PhilKra\Agent::getConfig
-   * @covers \PhilKra\Helper\Config::getDefaultConfig
-   * @covers \PhilKra\Helper\Config::asArray
+   * @covers \HT\Helper\Config::__construct
+   * @covers \HT\Agent::getConfig
+   * @covers \HT\Helper\Config::getDefaultConfig
+   * @covers \HT\Helper\Config::asArray
    */
   public function testControlDefaultConfig() {
     $appName = sprintf( 'app_name_%d', rand( 10, 99 ) );
@@ -53,10 +53,10 @@ final class ConfigTest extends TestCase {
   /**
    * @depends testControlDefaultConfig
    *
-   * @covers \PhilKra\Helper\Config::__construct
-   * @covers \PhilKra\Agent::getConfig
-   * @covers \PhilKra\Helper\Config::getDefaultConfig
-   * @covers \PhilKra\Helper\Config::asArray
+   * @covers \HT\Helper\Config::__construct
+   * @covers \HT\Agent::getConfig
+   * @covers \HT\Helper\Config::getDefaultConfig
+   * @covers \HT\Helper\Config::asArray
    */
   public function testControlInjectedConfig() {
     $init = array(
@@ -82,10 +82,10 @@ final class ConfigTest extends TestCase {
   /**
    * @depends testControlInjectedConfig
    *
-   * @covers \PhilKra\Helper\Config::__construct
-   * @covers \PhilKra\Agent::getConfig
-   * @covers \PhilKra\Helper\Config::getDefaultConfig
-   * @covers \PhilKra\Helper\Config::get
+   * @covers \HT\Helper\Config::__construct
+   * @covers \HT\Agent::getConfig
+   * @covers \HT\Helper\Config::getDefaultConfig
+   * @covers \HT\Helper\Config::get
    */
   public function testGetConfig() {
     $init = array(

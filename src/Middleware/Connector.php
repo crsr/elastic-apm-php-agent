@@ -1,12 +1,12 @@
 <?php
 
-namespace PhilKra\Middleware;
+namespace HT\Middleware;
 
-use PhilKra\Agent;
-use PhilKra\Stores\ErrorsStore;
-use PhilKra\Stores\TransactionsStore;
-use PhilKra\Serializers\Errors;
-use PhilKra\Serializers\Transactions;
+use HT\Agent;
+use HT\Stores\ErrorsStore;
+use HT\Stores\TransactionsStore;
+use HT\Serializers\Errors;
+use HT\Serializers\Transactions;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Client;
 
@@ -20,7 +20,7 @@ class Connector
     /**
      * Agent Config
      *
-     * @var \PhilKra\Helper\Config
+     * @var \HT\Helper\Config
      */
     private $config;
 
@@ -30,9 +30,9 @@ class Connector
     private $client;
 
     /**
-     * @param \PhilKra\Helper\Config $config
+     * @param \HT\Helper\Config $config
      */
-    public function __construct(\PhilKra\Helper\Config $config)
+    public function __construct(\HT\Helper\Config $config)
     {
         $this->config = $config;
 
@@ -58,7 +58,7 @@ class Connector
     /**
      * Push the Transactions to APM Server
      *
-     * @param \PhilKra\Stores\TransactionsStore $store
+     * @param \HT\Stores\TransactionsStore $store
      *
      * @return bool
      */
@@ -78,7 +78,7 @@ class Connector
     /**
      * Push the Errors to APM Server
      *
-     * @param \PhilKra\Stores\ErrorsStore $store
+     * @param \HT\Stores\ErrorsStore $store
      *
      * @return bool
      */

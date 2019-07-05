@@ -25,11 +25,11 @@ require 'vendor/autoload.php';
 
 ### Initialize the Agent with minimal Config
 ```php
-$agent = new \PhilKra\Agent(array('appName' => 'demo'));
+$agent = new \HT\Agent(array('appName' => 'demo'));
 ```
 When creating the agent, you can directly inject shared contexts such as user, tags and custom.
 ```php
-$agent = new \PhilKra\Agent(array('appName' => 'with-custom-context'), array(
+$agent = new \HT\Agent(array('appName' => 'with-custom-context'), array(
   'user' => array(
     'id'    => 12345,
     'email' => 'email@acme.com',
@@ -57,7 +57,7 @@ Please consult the documentation for your exact needs. Below is an example for a
 $trxName = 'GET /some/transaction/name';
 
 // create the agent
-$agent = new \PhilKra\Agent(array('appName' => 'Demo with Spans'));
+$agent = new \HT\Agent(array('appName' => 'Demo with Spans'));
 
 // start a new transaction
 $transaction = $agent->startTransaction($trxName);
@@ -146,7 +146,7 @@ $agent->getTransaction( $trxName )->setTags( array( 'k1' => 'v1', 'k2' => 'v2' )
 ### Example of a Transaction
 This example illustrates how you can monitor a call to another web service.
 ```php
-$agent = new \PhilKra\Agent( array( 'appName' => 'example' ) );
+$agent = new \HT\Agent( array( 'appName' => 'example' ) );
 
 $endpoint = 'https://acme.com/api/';
 $payload  = array( 'foo' => 'bar' );
@@ -204,7 +204,7 @@ $config = array(
         'proxy'  => 'tcp://localhost:8125'
     ),
 );
-$agent = new \PhilKra\Agent($config);
+$agent = new \HT\Agent($config);
 ```
 
 ## Tests
